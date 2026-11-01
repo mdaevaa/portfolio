@@ -21,6 +21,7 @@ nav {
     margin: 0%;
     padding: 15px 90px 15px 0;
     text-align: right;
+    
 }
 
 .crumb {
@@ -31,7 +32,7 @@ nav {
 .crumb a {
     display: inline-block;
     color: #a9c4d0;
-    font-size: 80%;
+    font-size: 0.95rem;
     font-weight: bold;
     padding: 0 3px;
     text-decoration: none;
@@ -52,6 +53,7 @@ nav {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    display: block;
 }
 
 .hero-contenu {
@@ -65,10 +67,106 @@ nav {
     box-sizing: border-box;
     color: #c9a66b;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero-contenu h1 {
     font-size: 4rem;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8),0 0 20px rgba(0, 0, 0, 0.6);
+    
+}
+
+.hero-contenu h2 {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8),0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.boutons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #c9a66b;
+    color: #0A1A2F;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #c9a66b;
+    border-radius: 999px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.qui-suis-je {
+    background-color: #e8dcc4;
+    padding: 60px 20px;
+    margin: 0%;
+}
+
+.qui-suis-je p {
+    margin: 0 0 18px;
+    color: #0A1A2F;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+
+}
+
+.qui-suis-je h2 {
+    font-family: "Playfair Display" , serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #1e4a6d;
+    margin-bottom: 25px;
+    margin-top: 0;
+    position: relative;
+    padding-bottom: 15px;
+
+
+}
+
+.ma-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 10px 30px rgba(30, 74, 109, 0.15);
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.presentation-texte {
+    flex: 1;
+}
+
+.presentation-texte p {
+    letter-spacing: 1px;
+}
+
+@media (max-width:768px) {.presentation
+    {flex-direction: column;
+text-align: center;}
+}
+
+.projets {
+    background-color: #0A1A2F;
+    padding: 60px 20px;
+    margin: 0%;
+}
+
+.realisation h2 {
+    color: #c9a66b;
+    font-family: "Playfair Display" , serif;
+    font-weight: 600;
+    font-size: 2.4rem;
 }
